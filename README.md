@@ -11,7 +11,7 @@ Welcome to my single-page application portfolio! This portfolio showcases my wor
 
 ## Getting Started
 
-To access and explore my portfolio, simply click [here](#). You can navigate through different sections of the portfolio using the navigation links.
+To access and explore my portfolio, simply click [here](https://shielded-dawn-28045-57efaee96b4c.herokuapp.com/). You can navigate through different sections of the portfolio using the navigation links.
 
 ## Features
 
