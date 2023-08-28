@@ -28,7 +28,6 @@ function Projects() {
               title="Anime Style Blog"
               description="This is a simple weather application built with JavaScript that retrieves and displays the weather forecast for a given city."
               ghLink="https://github.com/Afrozez/anime-forum"
-              demoLink="https://yaboiali.github.io/Weather-Application/"
             />
           </Col>
 
