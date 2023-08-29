@@ -33,6 +33,17 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={blog}
+              isBlog={false}
+              title="Tech Blog"
+              description="This CMS-style blog site offers a seamless user experience: visitors encounter existing blog posts on the homepage and can explore through navigation links. Signing up provides access to create, view, and manage posts, while logging in reveals additional navigation options and the ability to leave comments on posts. The dashboard facilitates effortless post management, including creation, editing, and deletion. Automatic logout after inactivity ensures security without hindering the ability to view posts and comments."
+              ghLink="https://github.com/YaBoiAli/TechBlog"
+              demoLink="https://limitless-springs-23948-f62474a2cc6d.herokuapp.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={notetaker}
               isBlog={false}
               title="Note Taker"
