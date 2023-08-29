@@ -3,6 +3,7 @@
 Welcome to my single-page application portfolio! This portfolio showcases my work, provides information about me, and allows you to get in touch. The portfolio features a dynamic user interface with smooth transitions and interactive elements.
 
 ## Table of Contents
+
 - [Getting Started](#getting-started)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
