@@ -1,4 +1,4 @@
-# Web Developer Portfolio
+# Muzzammil Nawab Portfolio
 
 Welcome to my single-page application portfolio! This portfolio showcases my work, provides information about me, and allows you to get in touch. The portfolio features a dynamic user interface with smooth transitions and interactive elements.
 
