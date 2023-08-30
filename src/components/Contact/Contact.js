@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import emailjs from "emailjs-com";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,6 +13,12 @@ function Contact() {
   });
 
   const [isEmailSent, setIsEmailSent] = useState(false);
+  const [isFormIncomplete, setIsFormIncomplete] = useState(true);
+
+  useEffect(() => {
+    const { name, email, message } = formValues;
+    setIsFormIncomplete(!name || !email || !message);
+  }, [formValues]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -51,7 +57,7 @@ function Contact() {
       <Container>
         <Row className="justify-content-center">
           <Col md={6} className="contact-form-col">
-            <h1>Contact Us</h1>
+            <h1>Contact Me</h1>
             {isEmailSent ? (
               <p className="email-sent-message">Your Email has been sent! 😊</p>
             ) : (
@@ -97,7 +103,7 @@ function Contact() {
                 />
               </Form.Group>
 
-              <Button className='submitBtn' variant="primary" type="submit">
+              <Button className='submitBtn' variant="primary" type="submit" disabled={isFormIncomplete}>
                 {isEmailSent ? 'Sent!' : 'Submit'}
               </Button>
             </Form>
