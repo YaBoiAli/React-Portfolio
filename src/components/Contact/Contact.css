@@ -1,0 +1,28 @@
+/* Contact.css */
+.contact-section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-form-col {
+  color: white;
+  background-image: linear-gradient(to left,   #193b37, #12413b);
+  opacity: 90%;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input{
+  background-image: linear-gradient(to left,   #1e5f56, #1d5f57);
+  border: none !important ;
+  margin: 5px;
+}
+
+.submitBtn{
+  background-image: linear-gradient(to left,   #1e5f56, #1d5f57);
+  border: none;
+  padding: 10px 30px 10px 30px;
+  margin-top: 10px;
+}

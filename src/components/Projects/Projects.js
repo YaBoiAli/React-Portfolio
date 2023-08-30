@@ -26,7 +26,7 @@ function Projects() {
               imgPath={blog}
               isBlog={false}
               title="Anime Style Blog"
-              description="This is a simple weather application built with JavaScript that retrieves and displays the weather forecast for a given city."
+              description="The project is an innovative online platform designed to facilitate engaging discussions among users who share an interest in various types of content. The platform offers user registration and authentication, allowing participants to create accounts securely using Node.js technology. Users can then log in and post comments on articles, blog posts, videos, and more. The comment creation process is user-friendly, encouraging respectful interactions. The entire system is built on Node.js for performance and scalability and utilizes SQL for efficient data management. Overall, the project aims to create a space where users can connect, share ideas, and engage in meaningful conversations about their favorite content."
               ghLink="https://github.com/Afrozez/anime-forum"
             />
           </Col>
@@ -68,7 +68,7 @@ function Projects() {
               imgPath={weather}
               isBlog={false}
               title="Weather Application"
-              description="The project is an innovative online platform designed to facilitate engaging discussions among users who share an interest in various types of content. The platform offers user registration and authentication, allowing participants to create accounts securely using Node.js technology. Users can then log in and post comments on articles, blog posts, videos, and more. The comment creation process is user-friendly, encouraging respectful interactions. The entire system is built on Node.js for performance and scalability and utilizes SQL for efficient data management. Overall, the project aims to create a space where users can connect, share ideas, and engage in meaningful conversations about their favorite content."
+              description="This is a simple weather application built with JavaScript that retrieves and displays the weather forecast for a given city."
               ghLink="https://github.com/YaBoiAli/Weather-Application"
               demoLink="https://yaboiali.github.io/Weather-Application/"
             />
