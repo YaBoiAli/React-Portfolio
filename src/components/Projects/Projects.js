@@ -44,6 +44,17 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={blog}
+              isBlog={false}
+              title="Jate Text Editor Web App"
+              description="The web application described is an advanced text editor with a client-server structure, utilizing technologies like webpack and next-gen JavaScript. It seamlessly integrates features such as IndexedDB for instant content saving and retrieval, as well as a registered service worker via workbox, providing offline capabilities and efficient caching. The app supports easy installation to the desktop, and its deployment process to Heroku is streamlined with optimized build scripts."
+              ghLink="https://github.com/YaBoiAli/Text-editor-webapp"
+              demoLink="https://sleepy-eyrie-91915-d97e8d8e4249.herokuapp.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={notetaker}
               isBlog={false}
               title="Note Taker"
