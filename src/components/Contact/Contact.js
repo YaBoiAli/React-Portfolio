@@ -3,6 +3,7 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import emailjs from "emailjs-com";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../Contact/Contact.css";
+import Particle from "../Particle";
 
 function Contact() {
   const [formValues, setFormValues] = useState({
@@ -102,6 +103,9 @@ function Contact() {
             </Form>
           </Col>
         </Row>
+      </Container>
+      <Container>
+        <Particle/>
       </Container>
     </section>
   );

@@ -1,15 +1,17 @@
 /* Contact.css */
 .contact-section {
-  display: flex;
+  display: relative;
   align-items: center;
   height: 100vh;
+  margin: auto;
+  margin-top: 15%; /* Adjust as needed */
 }
 
 .contact-form-col {
   color: white;
   background-image: linear-gradient(to left,   #193b37, #12413b);
   opacity: 90%;
-  padding: 25px;
+  padding: 15px; /* Adjust padding for smaller screens */
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -17,12 +19,33 @@
 .input{
   background-image: linear-gradient(to left,   #1e5f56, #1d5f57);
   border: none !important ;
-  margin: 5px;
+  margin: 3px; /* Adjust margin for smaller screens */
 }
 
 .submitBtn{
   background-image: linear-gradient(to left,   #1e5f56, #1d5f57);
   border: none;
-  padding: 10px 30px 10px 30px;
-  margin-top: 10px;
+  padding: 8px 20px; /* Adjust padding for smaller screens */
+  margin-top: 8px; /* Adjust margin for smaller screens */
+}
+
+/* Media Query for screens smaller than 768px (laptop) */
+@media (max-width: 767px) {
+  .contact-section {
+    margin-top: 200px; /* Adjust margin for smaller screens */
+  }
+
+  .contact-form-col {
+    padding: 10px; /* Adjust padding for smaller screens */
+    width: 90%;
+  }
+
+  .input {
+    margin: 2px; /* Adjust margin for smaller screens */
+  }
+
+  .submitBtn {
+    padding: 6px 15px; /* Adjust padding for smaller screens */
+    margin-top: 6px; /* Adjust margin for smaller screens */
+  }
 }
