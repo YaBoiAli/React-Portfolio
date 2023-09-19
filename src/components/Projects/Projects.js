@@ -8,6 +8,9 @@ import quiz from "../../Assets/Projects/quiz.png";
 import notetaker from "../../Assets/Projects/notetaker.png";
 import orm from "../../Assets/Projects/orm.png";
 import blog from "../../Assets/Projects/blog.png";
+import buddy from "../../Assets/Projects/buddy.png"
+import techBlog from "../../Assets/Projects/techBlog.png"
+import jate from "../../Assets/Projects/jate.png"
 
 function Projects() {
   return (
@@ -21,6 +24,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={buddy}
+              isBlog={false}
+              title="Study Buddies"
+              description="StudyBuddy is a web application for collaborative learning, powered by MongoDB, GraphQL, and Apollo. Users can create, share, and study flashcards with ease, enhancing their educational experience."
+              ghLink="https://github.com/YaBoiAli/StudyBuddy"
+              demoLink="https://study-buddy-p3-0d14fa2a37d6.herokuapp.com/"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={blog}
@@ -33,7 +47,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={blog}
+              imgPath={techBlog}
               isBlog={false}
               title="Tech Blog"
               description="This CMS-style blog site offers a seamless user experience: visitors encounter existing blog posts on the homepage and can explore through navigation links. Signing up provides access to create, view, and manage posts, while logging in reveals additional navigation options and the ability to leave comments on posts. The dashboard facilitates effortless post management, including creation, editing, and deletion. Automatic logout after inactivity ensures security without hindering the ability to view posts and comments."
@@ -44,7 +58,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={blog}
+              imgPath={jate}
               isBlog={false}
               title="Jate Text Editor Web App"
               description="The web application described is an advanced text editor with a client-server structure, utilizing technologies like webpack and next-gen JavaScript. It seamlessly integrates features such as IndexedDB for instant content saving and retrieval, as well as a registered service worker via workbox, providing offline capabilities and efficient caching. The app supports easy installation to the desktop, and its deployment process to Heroku is streamlined with optimized build scripts."
