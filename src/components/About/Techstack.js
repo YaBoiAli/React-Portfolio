@@ -18,9 +18,17 @@ import {
   DiHeroku,
 } from "react-icons/di";
 import {
+  SiApollographql,
+  SiGraphql,
+  SiInsomnia,
+  SiJquery,
+  SiLinux,
+  SiMetro,
+  SiMysql,
   SiNextdotjs,
   SiPostgresql,
   SiSwift,
+  SiTailwindcss,
 } from "react-icons/si";
 
 function Techstack() {
@@ -76,6 +84,30 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiSwift />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMysql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTailwindcss />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGraphql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMetro />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiLinux />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiApollographql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiInsomnia />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiJquery />
       </Col>
     </Row>
   );
