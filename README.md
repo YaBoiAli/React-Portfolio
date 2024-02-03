@@ -61,11 +61,10 @@ By performing specific actions, an image within the portfolio becomes interactiv
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
+- React.js
+- Tailwind CSS
 - Particle.js (for the particle background)
-- [Interactive Image Library] (for the interactive image)
+- Interactive Image Library (for the interactive image)
 
 ## Preview
 
