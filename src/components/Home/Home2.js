@@ -2,10 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -18,11 +15,14 @@ function Home2() {
               LET ME <span className="pink"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Having embarked on my coding odyssey during middle school, I've
-              nurtured an unswerving ardor for programming that's only grown
-              stronger over time. From crafting rudimentary games to
-              architecting sophisticated applications, my journey reflects a
-              lifelong devotion to the art of coding.
+              Innovative AI Engineer at RadicalX, specializing in AI coaching
+              with ReX. Cross-platform Software Engineer Intern at WooJoo
+              Universe, adept in React.js, React Native, Java, and Android
+              Studio. Experienced in GraphQL, SQL optimization, and API testing.
+              Strong foundation in App development, AI and Web development and pursuing a Bachelor's in
+              Computer Science at The University of Texas at Dallas. Passionate
+              about creating impactful products that solve real-world problems
+              and improve lives.
               <br />
               <br />I am fluent in classics like
               <i>

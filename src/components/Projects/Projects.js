@@ -11,6 +11,7 @@ import blog from "../../Assets/Projects/blog.png";
 import buddy from "../../Assets/Projects/buddy.png"
 import techBlog from "../../Assets/Projects/techBlog.png"
 import jate from "../../Assets/Projects/jate.png"
+import gemini from "../../Assets/Projects/gemini.png"
 
 function Projects() {
   return (
@@ -37,11 +38,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={blog}
+              imgPath={gemini}
               isBlog={false}
-              title="Anime Style Blog"
-              description="The project is an innovative online platform designed to facilitate engaging discussions among users who share an interest in various types of content. The platform offers user registration and authentication, allowing participants to create accounts securely using Node.js technology. Users can then log in and post comments on articles, blog posts, videos, and more. The comment creation process is user-friendly, encouraging respectful interactions. The entire system is built on Node.js for performance and scalability and utilizes SQL for efficient data management. Overall, the project aims to create a space where users can connect, share ideas, and engage in meaningful conversations about their favorite content."
-              ghLink="https://github.com/Afrozez/anime-forum"
+              title="Gemini Chatbot"
+              description="Gemini is a chatbot that can answer questions about the weather, provide information about the local businesses, and provide information about basically anything. It uses the gemini API so that any question that can be asked to the chatbot can be answered."
+              ghLink="https://github.com/YaBoiAli/Gemini-Chatbot"
+              demoLink="https://gemini-chatbot-psi.vercel.app/"  
             />
           </Col>
 
