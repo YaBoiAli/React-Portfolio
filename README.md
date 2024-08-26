@@ -77,6 +77,3 @@ Feel free to reach out to me! You can connect with me on:
 - [GitHub](https://github.com/YaBoiAli)
 - [LinkedIn](https://www.linkedin.com/in/muzzammil-nawab-676b78223/)
 - [Email](mailto:alinawab9830@gmail.com)
-
-Thanks to Soumyajit Behera for helping out with this Project! You can check him out here => https://github.com/soumyajit4419
-And freecodingbootcamp tutorials, you can also check them out here => https://www.youtube.com/@freecodecamp 
