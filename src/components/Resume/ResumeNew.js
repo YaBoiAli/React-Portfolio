@@ -1,55 +1,64 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+import "./index.css";
+import { Container, Row, Button } from "react-bootstrap";
 import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/Muzzammil_Nawab.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+pdfjs.GlobalWorkerOptions.workerSrc =
+  `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
+const LETTER_RATIO = 8.5 / 11;
+const PAGE_MARGIN  = 160;
+
+const getPageWidth = () => {
+  const vw = window.innerWidth * 0.9;
+  const vh = window.innerHeight - PAGE_MARGIN;
+  return Math.min(vw, vh * LETTER_RATIO);
+};
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
+  const [pageWidth, setPageWidth] = useState(getPageWidth());
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    const onResize = () => setPageWidth(getPageWidth());
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
   }, []);
 
   return (
-    <div>
-      <Container fluid className="resume-section">
-        <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
+    <Container fluid className="resume-section fill-vh d-flex flex-column">
+      <Particle />
 
-        <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
+      {/* top button */}
+      <Row className="justify-content-center mb-3" style={{ zIndex: 2 }}>
+        <Button variant="primary" href={pdf} target="_blank" style={{ maxWidth: 250 }}>
+          <AiOutlineDownload /> &nbsp;Download CV
+        </Button>
+      </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
-      </Container>
-    </div>
+      {/* PDF — row ignores clicks except on the actual document */}
+      <Row
+        className="flex-grow-1 justify-content-center"
+        style={{ pointerEvents: "none" }}          // transparent parts don't eat clicks
+      >
+        <Document
+          file={pdf}
+          className="d-flex justify-content-center"
+          style={{ pointerEvents: "auto" }}        // <Page> remains interactive
+        >
+          <Page pageNumber={1} width={pageWidth} />
+        </Document>
+      </Row>
+
+      {/* bottom button */}
+      <Row className="justify-content-center mt-3" style={{ zIndex: 2 }}>
+        <Button variant="primary" href={pdf} target="_blank" style={{ maxWidth: 250 }}>
+          <AiOutlineDownload /> &nbsp;Download CV
+        </Button>
+      </Row>
+    </Container>
   );
 }
 
